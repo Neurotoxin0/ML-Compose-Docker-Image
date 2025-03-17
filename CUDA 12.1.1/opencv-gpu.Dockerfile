@@ -17,7 +17,6 @@ RUN apt-get update && apt-get install -y \
 # Install numpy 1.23.5
 RUN python3.10 -m pip install --no-cache-dir numpy==1.23.5
 
-
 # Clone OpenCV source and build with CUDA
 RUN git clone --depth=1 https://github.com/opencv/opencv.git && \
     git clone --depth=1 https://github.com/opencv/opencv_contrib.git && \
