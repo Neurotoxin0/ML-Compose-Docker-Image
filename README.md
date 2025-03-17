@@ -106,12 +106,12 @@ docker build -t ml-combined:cuda12.1.1 -f final-image.Dockerfile .
 To start a container with **GPU support** and keep it running:
 #### 🔹 **For CUDA 11.2.2**
 ```
-docker run --gpus all -itd --rm ml-combined:cuda11.2.2 sleep infinity
+docker run --gpus all -itd --rm ml-combined:cuda11.2.2 bash
 ```
 
 #### 🔹 **For CUDA 12.1.1**
 ```
-docker run --gpus all -itd --rm ml-combined:cuda12.1.1 sleep infinity
+docker run --gpus all -itd --rm ml-combined:cuda12.1.1 bash
 ```
 
 ### **Verify GPU Availability**
