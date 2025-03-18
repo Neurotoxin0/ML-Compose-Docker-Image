@@ -61,28 +61,28 @@ If you prefer to **build locally**, follow the instructions below.
 ### **1️⃣ Build OpenCV-GPU Image**
 #### 🔹 **For CUDA 11.2.2**
 ```
-docker build -t opencv-gpu:cuda11.2.2 -f CUDA\ 11.2.2/opencv-gpu.Dockerfile .
+docker build -t opencv-gpu:cuda11.2.2 -f CUDA11.2.2/opencv-gpu.Dockerfile .
 ```
 
 #### 🔹 **For CUDA 12.1.1**
 ```
-docker build -t opencv-gpu:cuda12.1.1 -f CUDA\ 12.1.1/opencv-gpu.Dockerfile .
+docker build -t opencv-gpu:cuda12.1.1 -f CUDA12.1.1/opencv-gpu.Dockerfile .
 ```
 
 ### **2️⃣ Build PyTorch-GPU Image**
 #### 🔹 **For CUDA 11.2.2**
 ```
-docker build -t opencv-pytorch-gpu:cuda11.2.2 -f CUDA\ 11.2.2/pytorch-gpu.Dockerfile .
+docker build -t opencv-pytorch-gpu:cuda11.2.2 -f CUDA11.2.2/pytorch-gpu.Dockerfile .
 ```
 
 #### 🔹 **For CUDA 12.1.1**
 ```
-docker build -t opencv-pytorch-gpu:cuda12.1.1 -f CUDA\ 12.1.1/pytorch-gpu.Dockerfile .
+docker build -t opencv-pytorch-gpu:cuda12.1.1 -f CUDA12.1.1/pytorch-gpu.Dockerfile .
 ```
 
 ### **3️⃣ Build TensorFlow-GPU Image (Only for CUDA 11.2.2)**
 ```
-docker build -t opencv-pytorch-tensorflow-gpu:cuda11.2.2 -f CUDA\ 11.2.2/tensorflow-gpu.Dockerfile .
+docker build -t opencv-pytorch-tensorflow-gpu:cuda11.2.2 -f CUDA11.2.2/tensorflow-gpu.Dockerfile .
 ```
 
 ### **4️⃣ Build the Final Combined Image**

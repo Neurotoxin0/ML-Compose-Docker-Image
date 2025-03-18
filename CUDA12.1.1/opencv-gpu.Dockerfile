@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
     ffmpeg libv4l-dev gstreamer1.0-tools gstreamer1.0-libav gstreamer1.0-plugins-good libx264-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install numpy 1.23.5
-RUN python3.10 -m pip install --no-cache-dir numpy==1.23.5
+# Install numpy 1.26.3
+RUN python3.10 -m pip install --no-cache-dir numpy==1.26.3
 
 # Clone OpenCV source and build with CUDA
 RUN git clone --depth=1 https://github.com/opencv/opencv.git && \
