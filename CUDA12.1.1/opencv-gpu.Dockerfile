@@ -43,5 +43,8 @@ RUN git clone --depth=1 https://github.com/opencv/opencv.git && \
           -D OPENCV_ENABLE_NONFREE=OFF .. && \
     make -j$(nproc) && make install && ldconfig
 
+# Clean up
+RUN rm -rf opencv opencv_contrib
+
 # Keep container alive
 CMD ["sleep", "infinity"]
